@@ -34,5 +34,14 @@ namespace Programacion_II_Problema_1._5
             closeConeccion();
             return tabla;
         }
+        public void cargarDatos(string sp, string name, int edad, string descripcion, int importe)
+        {
+            openConeccion(sp);
+            cmd.Parameters.AddWithValue("@nombre", name);
+            cmd.Parameters.AddWithValue("@edad", edad);
+            cmd.Parameters.AddWithValue("@descripcion", descripcion);
+            cmd.Parameters.AddWithValue("@importe", importe);
+            closeConeccion();
+        }
     }
 }
