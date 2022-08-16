@@ -41,6 +41,7 @@ namespace Programacion_II_Problema_1._5
             cmd.Parameters.AddWithValue("@edad", edad);
             cmd.Parameters.AddWithValue("@descripcion", descripcion);
             cmd.Parameters.AddWithValue("@importe", importe);
+            cmd.ExecuteNonQuery();
             closeConeccion();
         }
     }
