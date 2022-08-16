@@ -9,13 +9,23 @@ tipo varchar (50),
 constraint pk_tipo_mascotas primary key (id_tipo),
 )
 
+create table CLIENTES(
+id_cliente int identity (1,1),
+nombre varchar (50),
+apellido varchar (50),
+sexo varchar (1),
+constraint pk_clientes primary key (id_cliente),
+)
+
 create table MASCOTAS(
 id_mascota int identity (1,1),
 nombre varchar (50),
 edad int,
 id_tipo int,
-constraint pk_mascota primary key (id_mascota),
+id_cliente int,
+constraint pk_mascotas primary key (id_mascota),
 constraint fk_mascotas_tipo_mascotas foreign key (id_tipo) references tipo_mascotas(id_tipo),
+constraint fk_mascotas_clientes foreign key (id_cliente) references clientes(id_cliente),
 )
 
 create table ATENCIONES(
@@ -25,16 +35,6 @@ importe int,
 id_mascota int,
 constraint pk_atenciones primary key (id_atencion),
 constraint fk_atenciones_mascotas foreign key (id_mascota) references mascotas(id_mascota)
-)
-
-create table CLIENTES(
-id_cliente int identity (1,1),
-nombre varchar (50),
-apellido varchar (50),
-sexo varchar (1),
-id_mascota int,
-constraint pk_clientes primary key (id_cliente),
-constraint fk_clientes_mastocas foreign key (id_mascota) references mascotas(id_mascota),
 )
 
 insert into CLIENTES(nombre, apellido, sexo)

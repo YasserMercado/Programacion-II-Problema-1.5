@@ -44,14 +44,14 @@ namespace Programacion_II_Problema_1._5
             name.ValueMember = columnaValue;
         }
 
-        private void insetarDatos(string sp, string name, int edad, string descripcion, int importe)
+        private void insetarDatos(string sp, string name, int edad, int id_tipo, int id_cliente, string descripcion, int importe)
         {
-            oBD.cargarDatos(sp, name, edad, descripcion, importe);
+            oBD.cargarDatos(sp, name, edad, id_tipo, id_cliente, descripcion, importe);
         }
 
         private void btnCARGAR_Click(object sender, EventArgs e)
         {
-            insetarDatos("SP_CONSULTA", textBoxNOMBRE_MASCOTA.Text, Convert.ToInt32(textBoxEDAD.Text), textBoxDESCRIPCION_CONSULTA.Text, Convert.ToInt32(textBoxIMPORTE.Text));
+            insetarDatos("SP_CONSULTA", textBoxNOMBRE_MASCOTA.Text, Convert.ToInt32(textBoxEDAD.Text), int.Parse(cboxTIPO_MASCOTA.SelectedValue.ToString()), int.Parse(lboxCLIENTES.SelectedValue.ToString()), textBoxDESCRIPCION_CONSULTA.Text, Convert.ToInt32(textBoxIMPORTE.Text));
         }
     }
 }

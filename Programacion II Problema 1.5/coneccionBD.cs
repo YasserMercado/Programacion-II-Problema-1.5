@@ -14,7 +14,7 @@ namespace Programacion_II_Problema_1._5
         SqlCommand cmd;
         public coneccionBD()
         {
-            coneccion = new SqlConnection(@"Data Source=YASSPC\SQLEXPRESS;Initial Catalog=VETERINARIA;Integrated Security=True");
+            coneccion = new SqlConnection(@"Data Source=YASS-TMK\SQLEXPRESS;Initial Catalog=VETERINARIA;Integrated Security=True");
         }
         private void openConeccion(string sp)
         {
@@ -34,11 +34,13 @@ namespace Programacion_II_Problema_1._5
             closeConeccion();
             return tabla;
         }
-        public void cargarDatos(string sp, string name, int edad, string descripcion, int importe)
+        public void cargarDatos(string sp, string name, int edad, int id_tipo, int id_cliente, string descripcion, int importe)
         {
             openConeccion(sp);
             cmd.Parameters.AddWithValue("@nombre", name);
             cmd.Parameters.AddWithValue("@edad", edad);
+            cmd.Parameters.AddWithValue("@id_tipo", id_tipo);
+            cmd.Parameters.AddWithValue("@id_cliente", id_cliente);
             cmd.Parameters.AddWithValue("@descripcion", descripcion);
             cmd.Parameters.AddWithValue("@importe", importe);
             cmd.ExecuteNonQuery();
