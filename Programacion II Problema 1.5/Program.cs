@@ -16,7 +16,7 @@ namespace Programacion_II_Problema_1._5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new VETERINARIA());
         }
     }
 }

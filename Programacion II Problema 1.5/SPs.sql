@@ -8,11 +8,11 @@ AS
 SELECT tipo, id_tipo
 FROM TIPO_MASCOTAS
 
-CREATE PROCEDURE SP_CONSULTA
+CREATE PROCEDURE [dbo].[SP_CONSULTA]
 @nombre varchar (50), @edad int, @id_tipo int, @id_cliente int,
 @descripcion varchar(100), @importe int
 AS
 INSERT INTO MASCOTAS(nombre, edad, id_tipo, id_cliente)
 VALUES (@nombre, @edad, @id_tipo, @id_cliente)
-INSERT INTO ATENCIONES(descripcion, importe)
-VALUES (@descripcion, @importe)
+INSERT INTO ATENCIONES(descripcion, importe, id_mascota)
+VALUES (@descripcion, @importe, (SELECT MAX(id_mascota) FROM MASCOTAS))

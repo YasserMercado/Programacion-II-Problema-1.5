@@ -14,9 +14,9 @@ C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\
 C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\bin\Debug\Programacion II Problema 1.5.pdb
 C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\obj\Debug\Programacion II Problema 1.5.csproj.AssemblyReference.cache
 C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\obj\Debug\Programacion II Problema 1.5.csproj.SuggestedBindingRedirects.cache
-C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\obj\Debug\Programacion_II_Problema_1._5.Form1.resources
 C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\obj\Debug\Programacion_II_Problema_1._5.Properties.Resources.resources
 C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\obj\Debug\Programacion II Problema 1.5.csproj.GenerateResource.cache
 C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\obj\Debug\Programacion II Problema 1.5.csproj.CoreCompileInputs.cache
 C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\obj\Debug\Programacion II Problema 1.5.exe
 C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\obj\Debug\Programacion II Problema 1.5.pdb
+C:\Users\YASS\Desktop\Programacion II Problema 1.5\Programacion-II-Problema-1.5\Programacion II Problema 1.5\obj\Debug\Programacion_II_Problema_1._5.VETERINARIA.resources
